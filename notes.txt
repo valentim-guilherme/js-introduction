@@ -19,4 +19,7 @@
 
     yarn dev
 
+
+
+    now let's use rest/spread (ps we need to include it on babel)
 -->
