@@ -5,14 +5,22 @@
     <body>
 
             <script>
-                function sum(num1, num2){
-                    var result = num1 + num2;
+                function returnGender(gender){
 
-                    return result;
+
+                    var genders = {
+                         M: "Masculino"
+                        ,F: "Feminino"
+
+                    }
+                    
+                    // M, F
+                    // Masculino, Feminino
+
+                    return genders[gender];
                 }
 
-                var result = sum(1,2);
-
+                var result = returnGender('M');
                 console.log(result);
             </script>
     </body>
