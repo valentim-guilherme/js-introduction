@@ -1,0 +1,22 @@
+<!-- 
+    Babel
+    Webpack
+    Class
+    Arrow functions
+    Desestruturing
+    Rest/spread
+    Import/Export
+    Async/await 
+
+    yarn init
+    yarn add @babel/cli
+    yarn add @babel/preset-env
+    yarn add @babel/core
+
+    .gitignore node_modules/
+
+    .babelrc file setup 
+
+    yarn dev
+
+-->
