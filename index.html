@@ -16,15 +16,25 @@
 
                     if (gender == 'M'){
                         ret = 'Masculino';
-                    } else {
+                    } else if (gender == 'F') {
                         ret = 'Feminino';
+                    } else {
+                        ret = 'Other';
                     }
                     
+                    switch (gender) {
+                        case 'M':
+                            ret = 'Masculino';
+                        case 'F':
+                            ret = 'Feminino';
+                        default:
+                            ret = 'Other';
+                    }
 
                     return ret;
                 }
 
-                var result = returnGender('M');
+                var result = returnGender('2M2');
                 console.log(result);
             </script>
     </body>
