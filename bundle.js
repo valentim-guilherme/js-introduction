@@ -1,24 +1,13 @@
 "use strict";
 
-var arr = [1, 3, 4, 5, 6]; // const newArr = arr.map(function(item){
-//     return item * 2;
-// });
-// const newArr = arr.map((item) => {
-//     return item * 2;
-// });
-// const newArr = arr.map(item => {
-//     return item * 2;
-// });
+function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
+} // arrow style 
+//const soma = (a = 3, b = 6) => a + b;
 
-var newArr = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr);
 
-var teste = function teste() {
-  return {
-    name: 'Guilherme'
-  };
-};
-
-console.log(teste());
+console.log(soma(1, 2));
+console.log(soma(1));
+console.log(soma());

@@ -1,21 +1,10 @@
-const arr = [1, 3, 4, 5, 6];
+function soma(a = 3, b = 6){
+    return a + b;
+}
 
-// const newArr = arr.map(function(item){
-//     return item * 2;
-// });
+// arrow style 
+//const soma = (a = 3, b = 6) => a + b;
 
-// const newArr = arr.map((item) => {
-//     return item * 2;
-// });
-
-// const newArr = arr.map(item => {
-//     return item * 2;
-// });
-
-const newArr = arr.map(item => item * 2);
-
-console.log(newArr);
-
-const teste = () => ({ name: 'Guilherme' });
-
-console.log(teste());
+console.log(soma(1,2));
+console.log(soma(1));
+console.log(soma());
