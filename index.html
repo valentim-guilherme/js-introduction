@@ -5,37 +5,22 @@
     <body>
 
             <script>
-                function returnGender(gender){
 
-                    var ret;
+                    var gender = 'M', idade = 23, result;
 
-                    /*
-                        if(1 == "1") //true
-                        if(1 === "1") //false
-                    */
+                    //AND, OR , NOT
 
-                    if (gender == 'M'){
-                        ret = 'Masculino';
-                    } else if (gender == 'F') {
-                        ret = 'Feminino';
-                    } else {
-                        ret = 'Other';
-                    }
-                    
-                    switch (gender) {
-                        case 'M':
-                            ret = 'Masculino';
-                        case 'F':
-                            ret = 'Feminino';
-                        default:
-                            ret = 'Other';
+                    if(gender === 'M' && idade > 18){
+                        console.log('ok');
                     }
 
-                    return ret;
-                }
+                    if(gender == 'F' || idade > 18){
+                        console.log('ok');
+                    }
 
-                var result = returnGender('2M2');
-                console.log(result);
+                    if(gender != 'F'){
+                        console.log('nok');
+                    }
             </script>
     </body>
 </html>
